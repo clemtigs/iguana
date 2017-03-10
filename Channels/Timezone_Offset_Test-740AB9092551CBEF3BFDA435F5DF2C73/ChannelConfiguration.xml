@@ -1,0 +1,24 @@
+<channel
+   name="Timezone Offset Test"
+   guid="740AB9092551CBEF3BFDA435F5DF2C73"
+   description=""
+   start_automatically="true"
+   logging_level="1"
+   use_message_filter="false">
+   <to_mapper
+      guid="Timezone_Offset_Test-To-NgFIXQ8qag1tjC"
+      commit_id="307f056007a5b3c696a8583b8742e884e5fbaf42"
+      commit_comment="test">
+      <dequeue_list>
+         <dequeue
+            source_name="self"
+            dequeue_guid="AF515826F0A0BDA9B4C11AFC6E64E58B"/>
+      </dequeue_list>
+   </to_mapper>
+   <from_mapper
+      guid="Timezone_Offset_Test-From-qFlELZBTUFpBQh"
+      commit_id="ee899e58aa9400aad9724dbb3fd4b218f4d1c92b"
+      commit_comment="Initial setup"
+      poll_time="10000">
+   </from_mapper>
+</channel>
